@@ -1,0 +1,131 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/main.scss';
+a{
+    text-decoration: none;
+    color: $black;
+}
+.ui-footer{
+    background-color: $background-color-dark;
+    padding: 50px 0 0 ;
+    .row{
+        .col-lg-3{
+            text-align: left;
+            min-height: 300px;
+            max-height: 400px;
+            justify-content: space-evenly;
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
+    &-agLogo{
+        width: 110px;
+      }
+    &-eurasia{
+     width: 150px;
+     background-color: $white;
+    }
+    &-social{
+           p{
+            font-size: $font-size-lg;
+           }
+           &-icon{
+               transition: 400ms;
+               margin: 10px;
+               font-size: 2em;
+               &:hover{
+                   color: $red;
+                   transform: scale(1.2);
+               }
+       }
+    }
+    &-title{
+        border-bottom: 3px solid $red;
+        width: fit-content;
+        &:hover a{
+            color: $red;
+           
+        }
+    }
+    &-list{
+        li{
+            margin: 5px 0;
+            a{
+                font-size: $font-size-md;
+                &:hover{
+                    color: $red;
+                }
+            }
+        }
+    }
+    &-rights{
+        p{
+            font-size: $font-size-sm;
+            margin-bottom: 5px;
+        }
+    }
+    @media(max-width: 992px){
+        padding: 30px 0 0;
+          .row{
+        .col-lg-3{
+            align-items: center;
+        }
+
+    }
+        &-agLogo{
+        width: 90px;
+      }
+        &-eurasia{
+            width: 130px;
+        }
+        &-social{
+            p{
+                font-size: $font-size-md;
+            }
+            &-icon{
+                margin: 5px;
+                font-size: 1.5em;
+            }
+        }
+        &-list{
+            li{
+                margin: 8px;
+                a{
+                    font-size: $font-size-sm;
+                }
+            }
+        }
+    }
+  @media(max-width: 768px){
+        padding: 25px 0 0 ;
+        &-agLogo{
+        width: 60px;
+      }
+        &-eurasia{
+            width: 100px;
+        }
+        &-social{
+            p{
+                font-size: $font-size-sm;
+            }
+            &-icon{
+                margin: 5px;
+                font-size: 1.1em;
+            }
+        }
+        &-list{
+            li{
+                margin: 5px;
+                a{
+                    font-size: $font-size-xs;
+                }
+            }
+        }
+        &-rights{
+            p{
+                font-size: $font-size-xxs;
+            }
+        }
+    }
+}

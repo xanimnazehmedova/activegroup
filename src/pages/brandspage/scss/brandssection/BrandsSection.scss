@@ -1,0 +1,41 @@
+@import '../../../../assets/styles/variables.scss';
+@import '../../../../assets/styles/main.scss';
+
+.ui-brands{
+    padding: 100px 0;
+    &-brand{
+        width: 160px;
+        height: 160px;
+        transition: 300ms;
+        border:1px solid $light-gray;
+        border-radius: 8px;
+        box-shadow: $box-shadow-sm; 
+        a{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img{
+            transition: 400ms;
+          }
+        &:hover{
+            img{
+            filter: drop-shadow(9px 8px 8px rgb(156, 154, 154));
+            transform: scale(1.1);
+            }
+        }
+      }
+   
+    }
+    @media(max-width: 992px){
+        &-brand{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    @media(max-width: 768px){
+        &-brand{
+            width: 80px;
+            height: 80px;
+        }
+    }
+}

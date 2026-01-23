@@ -1,0 +1,93 @@
+@import '../../../../assets/styles/main.scss';
+@import '../../../../assets/styles/variables.scss';
+
+
+
+.ui-about-hero{
+  color: $black;
+  background-image: 
+  url('../../../../assets/images/aboutpage/banner.jpg');
+  width: 100%;
+  height:auto;
+  aspect-ratio: 1492 / 550;
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  &-content{
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.32) 1%,transparent 100%) ;
+    background-color: $red;
+    color: $white;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding:  0 0 0 10px;
+    .navigate-home{
+      color: lightgray;
+    display: flex;
+    align-items: center;
+    transition: 400ms;
+    width: fit-content;
+    font-size: $font-size-sm;
+    margin-bottom: 16px;
+    &:hover{
+      color: white;
+      font-weight: 700;
+      transform: translateX(10px);
+    }
+  }
+    h2{
+        font-weight: 700;
+        font-size: $font-size-heading1;
+    }
+  }
+  
+  @media(max-width: 992px){
+    &-content{
+      width: 30%;
+      .navigate-home{
+        font-size: $font-size-xs;
+        &:hover{
+          transform: translateX(8px);
+        }
+      }
+      h2{
+        font-size: $font-size-heading4;
+      }
+    }
+  }
+
+  @media(max-width: 768px){
+      &-content{
+        width: 30%;
+         .navigate-home{
+        font-size: $font-size-xxs;
+        &:hover{
+          transform: translateX(5px);
+        }
+      }
+      h2{
+        font-size: $font-size-heading6;
+      }
+      }
+  }
+
+     @media(max-width: 576px){
+      &-content{
+        width: 30%;
+        .navigate-home{
+        font-size: $font-size-xxs;
+        &:hover{
+          transform: translateX(5px);
+        }
+      }
+      h2{
+        font-size: $font-size-xs;
+      }
+      }
+    }
+}

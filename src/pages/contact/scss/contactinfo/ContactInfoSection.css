@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+body {
+  font-family: "Montserrat";
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.row {
+  --bs-gutter-x:0 ;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.contact-info {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+.contact-info h1 {
+  text-shadow: 1px 4px 4px rgba(223, 65, 65, 0.5);
+  font-size: 40px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #6f0303;
+  animation: slideIn 0.8s ease forwards;
+  opacity: 0;
+  transform: translateX(100px);
+  font-weight: 700;
+}
+.contact-info-card {
+  padding: 10px;
+}
+.contact-info-card p {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+  margin-bottom: 18px;
+  font-size: 18px;
+  color: #808080;
+  line-height: 1.5;
+  animation: slideIn 1s ease forwards;
+  opacity: 0;
+  transform: translateX(100px);
+}
+.contact-info-card p i {
+  font-size: 24px;
+  color: rgb(111, 3, 3);
+  margin-right: 12px;
+  margin-top: 4px;
+  width: 28px;
+  text-align: center;
+}
+.contact-info-card p strong {
+  font-size: 24px;
+  color: #333;
+  font-weight: 600;
+  animation: slideIn 1.9s ease forwards;
+  opacity: 0;
+  transform: translateX(100px);
+}
+.contact-info-card p a {
+  font-size: 18px;
+  color: #808080;
+  text-decoration: none;
+}
+.contact-info-card p a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .contact-info h1 {
+    font-size: 28px;
+  }
+  .contact-info-card p {
+    font-size: 18px;
+  }
+  .contact-info-card p i {
+    font-size: 18px;
+  }
+  .contact-info-card p strong {
+    font-size: 18px;
+  }
+  .contact-info-card p a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-info h1 {
+    font-size: 20px;
+  }
+  .contact-info-card p {
+    font-size: 14px;
+  }
+  .contact-info-card p i {
+    font-size: 14px;
+  }
+  .contact-info-card p strong {
+    font-size: 14px;
+  }
+  .contact-info-card p a {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=ContactInfoSection.css.map */

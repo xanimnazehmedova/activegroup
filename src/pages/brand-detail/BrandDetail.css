@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+body {
+  font-family: "Montserrat";
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.row {
+  --bs-gutter-x:0 ;
+}
+
+.ui-brand-banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0 40px;
+}
+.ui-brand-banner-content {
+  width: 300px;
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.6901960784);
+  padding: 20px;
+  border-radius: 10px;
+}
+.ui-brand .logo-wrapper {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: 300ms;
+}
+.ui-brand .logo-wrapper:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+.ui-brand-logo {
+  transition: 400ms;
+  width: 100%;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.1));
+}
+.ui-brand-logo:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
+}
+.ui-brand-name {
+  text-shadow: 2px 2px 5px rgb(254, 254, 254);
+}
+.ui-brand-site {
+  font-size: 18px;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 600;
+  color: #007bff;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.4s ease;
+}
+.ui-brand-site::after {
+  content: "";
+  display: block;
+  transition: 400ms;
+  width: 10%;
+  height: 5px;
+  background: linear-gradient(90deg, #007bff, #00c3ff);
+  border-radius: 2px;
+}
+.ui-brand-site:hover:after {
+  content: "";
+  display: block;
+  width: 100%;
+}
+.ui-brand .breadcrumb {
+  padding: 10px 25px;
+  background-color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  transition: 300ms;
+  z-index: 1;
+  position: sticky;
+  top: 100px;
+  left: 0px;
+  font-size: 14px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.ui-brand .breadcrumb:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+.ui-brand .breadcrumb a {
+  text-decoration: underline;
+}
+.ui-brand .breadcrumb a, .ui-brand .breadcrumb span {
+  color: #808080;
+  font-weight: 600;
+}
+.ui-brand .breadcrumb a:hover {
+  color: #880305;
+}
+.ui-brand .breadcrumb span {
+  color: #000;
+}
+.ui-brand-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.ui-brand-content p {
+  font-size: 24px;
+  color: #000;
+  border-bottom: 2px solid #808080;
+  padding: 20px 0;
+}
+.ui-brand-content-img {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 16px;
+  justify-content: center;
+}
+.ui-brand-content-img img {
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 48%;
+  transition: transform 0.3s ease;
+}
+.ui-brand-content-img img:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .ui-brand-banner {
+    height: auto;
+    padding: 20px;
+  }
+  .ui-brand-banner-content {
+    width: 50%;
+    height: auto;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  .ui-brand .logo-wrapper {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+  }
+  .ui-brand-logo {
+    width: 100%;
+  }
+  .ui-brand-site {
+    font-size: 18px;
+    padding: 8px;
+  }
+  .ui-brand-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .ui-brand-content p {
+    font-size: 18px;
+  }
+  .ui-brand-content > div {
+    flex: 1 1 100%;
+  }
+  .ui-brand-content-img img {
+    max-width: 48%;
+  }
+}
+@media (max-width: 578px) {
+  .ui-brand-banner {
+    padding: 10px;
+  }
+  .ui-brand-banner-content {
+    padding: 10px;
+  }
+  .ui-brand .logo-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+  .ui-brand-site {
+    font-size: 14px;
+  }
+  .ui-brand-content p {
+    font-size: 14px;
+  }
+}
+
+.ui-brand-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.ui-brand-content-img {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ui-brand-content-img > div {
+  flex: 1;
+  display: contents;
+}
+
+.ui-brand-content-img > div img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+
+.ui-brand-content-img:last-of-type img {
+  width: 100%;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}/*# sourceMappingURL=BrandDetail.css.map */

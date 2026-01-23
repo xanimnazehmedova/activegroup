@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+body {
+  font-family: "Montserrat";
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.row {
+  --bs-gutter-x:0 ;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.ui-footer {
+  background-color: #e9ecef;
+  padding: 50px 0 0;
+}
+.ui-footer .row .col-lg-3 {
+  text-align: left;
+  min-height: 300px;
+  max-height: 400px;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+}
+.ui-footer-agLogo {
+  width: 110px;
+}
+.ui-footer-eurasia {
+  width: 150px;
+  background-color: white;
+}
+.ui-footer-social p {
+  font-size: 24px;
+}
+.ui-footer-social-icon {
+  transition: 400ms;
+  margin: 10px;
+  font-size: 2em;
+}
+.ui-footer-social-icon:hover {
+  color: #880305;
+  transform: scale(1.2);
+}
+.ui-footer-title {
+  border-bottom: 3px solid #880305;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.ui-footer-title:hover a {
+  color: #880305;
+}
+.ui-footer-list li {
+  margin: 5px 0;
+}
+.ui-footer-list li a {
+  font-size: 18px;
+}
+.ui-footer-list li a:hover {
+  color: #880305;
+}
+.ui-footer-rights p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+@media (max-width: 992px) {
+  .ui-footer {
+    padding: 30px 0 0;
+  }
+  .ui-footer .row .col-lg-3 {
+    align-items: center;
+  }
+  .ui-footer-agLogo {
+    width: 90px;
+  }
+  .ui-footer-eurasia {
+    width: 130px;
+  }
+  .ui-footer-social p {
+    font-size: 18px;
+  }
+  .ui-footer-social-icon {
+    margin: 5px;
+    font-size: 1.5em;
+  }
+  .ui-footer-list li {
+    margin: 8px;
+  }
+  .ui-footer-list li a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .ui-footer {
+    padding: 25px 0 0;
+  }
+  .ui-footer-agLogo {
+    width: 60px;
+  }
+  .ui-footer-eurasia {
+    width: 100px;
+  }
+  .ui-footer-social p {
+    font-size: 14px;
+  }
+  .ui-footer-social-icon {
+    margin: 5px;
+    font-size: 1.1em;
+  }
+  .ui-footer-list li {
+    margin: 5px;
+  }
+  .ui-footer-list li a {
+    font-size: 12px;
+  }
+  .ui-footer-rights p {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=Footer.css.map */

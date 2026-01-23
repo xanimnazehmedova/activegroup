@@ -1,0 +1,109 @@
+@import '../../../../assets/styles/main.scss';
+@import '../../../../assets/styles/variables.scss';
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+ .contact-info {
+  padding: 50px 0; 
+  background-color: $background-color-light;
+  h1 {
+    text-shadow: 1px 4px 4px rgba(223, 65, 65, 0.5);
+    font-size: $font-size-heading1;
+    margin-bottom: 25px;
+    text-align: center;
+    color: $dark-red;
+    animation: slideIn 0.8s ease forwards;
+    opacity: 0;
+    transform: translateX(100px);
+    font-weight: 700;
+  }
+  &-card{
+    padding: 10px;
+      p {
+        display: flex;
+        gap: 5px;
+        align-items: flex-start;
+        margin-bottom: 18px;
+        font-size: $font-size-md;
+        color: $gray;
+        line-height: 1.5;
+        animation: slideIn 1s ease forwards;
+        opacity: 0;
+        transform: translateX(100px);
+    
+        i {
+          font-size: $font-size-lg;
+          color: rgb(111, 3, 3) ;
+          margin-right: 12px;
+          margin-top: 4px;
+          width: 28px;
+          text-align: center;
+        }
+    
+        strong {
+          font-size: $font-size-lg;
+          color: #333;
+          font-weight: 600;
+          animation: slideIn 1.9s ease forwards;
+          opacity: 0;
+          transform: translateX(100px);
+        }
+    
+        a {
+          font-size: $font-size-md;
+          color: $gray;
+          text-decoration: none;
+    
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+  }
+  @media(max-width: 768px){
+    h1{
+      font-size: $font-size-heading3;
+    }
+    &-card{
+      p{
+        font-size: $font-size-md;
+        i{
+          font-size: $font-size-md;
+        }
+        strong{
+          font-size: $font-size-md;
+        }
+        a{
+          font-size: $font-size-md;
+        }
+      }
+    }
+
+  }
+
+  @media(max-width: 576px){
+    h1{
+      font-size: $font-size-heading5;
+    }
+    &-card{
+      p{
+        font-size: $font-size-sm;
+        i{
+          font-size: $font-size-sm;
+        }
+        strong{
+          font-size: $font-size-sm;
+        }
+        a{
+          font-size: $font-size-sm;
+        }
+      }
+    }
+
+  }
+
+}

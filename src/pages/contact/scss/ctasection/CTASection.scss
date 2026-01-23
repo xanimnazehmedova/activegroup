@@ -1,0 +1,228 @@
+
+@import '../../../../assets/styles/main.scss';
+@import '../../../../assets/styles/variables.scss';
+
+
+
+
+.ui-contact {
+  padding: 60px 0;
+  margin: 60px 0 ;
+  display: flex;
+  background-color: $background-color-light;
+
+  &-wrapper {
+    background-color: $background-color-light;
+    padding: 40px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  h1{
+    color: $dark-red;
+    text-shadow: 1px 4px 4px rgba(223, 65, 65, 0.5);
+    font-size: $font-size-heading1;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+
+  h3{
+    color: $gray;
+    font-size: $font-size-heading3;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  &-form {
+    width: 100%; 
+    max-width: 500px;
+    &-error{
+      color: $red;
+      font-size: $font-size-sm;
+    }
+
+    .form-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      margin-top: 25px;
+       .btn {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: $font-size-md;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+      font-weight: 600;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .btn-cancel {
+      background-color: $gray;
+      color: $white;
+
+      &:hover {
+        background-color: $dark-gray;
+      }
+    }
+
+    .btn-submit {
+      background-color: $red;
+      color: $white;
+
+      &:hover {
+        background-color: $dark-red;
+      }
+    }
+    }
+
+   
+  }
+
+  .input-wrapper {
+    position: relative;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 10px 20px;
+    border: 3px solid $red;
+    border-radius: 5px;
+    font-size: $font-size-md;
+    color: $gray;
+    outline: none;
+    transition: border-color 0.3s ease, $box-shadow-lg 0.3s ease;
+  }
+  
+
+  .input-field.textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  .input-wrapper label {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $red;
+    font-size: $font-size-md;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    z-index: 1;
+  }
+
+  .input-field:not(:placeholder-shown) + label,
+  .input-field:focus + label {
+    top: 0px;
+    background-color: $dark-red;
+    border-radius: 8px;
+    font-size: $font-size-sm;
+    color: $white;
+    padding: 5px 35px; 
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  &-loc {
+    flex: 1;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  iframe {
+    width: 100%;
+    height: 450px; 
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+
+
+  @media (max-width: 768px) {
+    padding: 50px 0; 
+
+    h1{
+      font-size: $font-size-heading3;
+    }
+
+    h3{
+      font-size: $font-size-heading5;
+    }
+ 
+    &-wrapper,
+    &-loc {
+      margin: 15px 0;
+    }
+    .input-field {
+    font-size: $font-size-sm;
+     }
+
+    .input-field:not(:placeholder-shown) + label,
+    .input-field:focus + label {
+      font-size: $font-size-xs;
+      padding: 5px 25px; 
+    }
+    iframe {
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding: 25px; 
+    &-wrapper{
+      padding: 20px;
+    }
+    
+     h1{
+      font-size: $font-size-heading5;
+    }
+
+    h3{
+      font-size: $font-size-heading6;
+    }
+    
+    &-form{
+      
+    .input-field:not(:placeholder-shown) + label,
+    .input-field:focus + label {
+      font-size: $font-size-xxs;
+      padding: 5px 15px; 
+    }
+      .input-wrapper label{
+        font-size: $font-size-sm;
+      }
+       .input-field {
+    font-size: $font-size-xs;
+     }
+    .form-actions {
+      gap: 10px;
+       .btn {
+      padding: 10px 15px;
+      font-size: $font-size-xs;
+      }
+      }
+     
+    }
+  
+    iframe {
+      height: 250px;
+    }
+  }
+}

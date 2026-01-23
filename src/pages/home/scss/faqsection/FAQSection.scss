@@ -1,0 +1,111 @@
+@import '../../../../assets/styles/main.scss';
+@import '../../../../assets/styles/variables.scss';
+
+
+
+
+.ui-faq {
+    padding: 80px 0;
+    background-color: $background-color-light;
+    .container {
+        margin: 0 auto;
+    }
+
+    &-heading {
+        text-align: center;
+        font-size: $font-size-heading1;
+        font-weight: 700;
+        color: $dark-red;
+        margin-bottom: 40px;
+        text-shadow: 2px 2px 4px rgba(252, 89, 89, 0.5);
+    }
+
+    &-list {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    &-item {
+        background-color: $background-color-light;
+        border-bottom: 1px solid $dark-red;
+        transition: 700ms;
+        &:hover {
+            background-color: $white;
+        }
+        &.open {
+            background-color: $white;
+        }
+    }
+
+    &-question {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-size: $font-size-lg;
+        font-weight: 600;
+        color: $dark-gray;
+    }
+
+    &-toggle-icon {
+        font-size: $font-size-lg;
+        font-weight: 500;
+        color: $dark-red;
+        transition: transform 600ms ease;
+    }
+
+    &-answer {
+        padding: 0 20px 20px;
+        color: $gray;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 600ms ease-out;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &-item.open {
+        .ui-faq-answer {
+            max-height: 200px; 
+            padding: 20px 10px;
+            opacity: 1;
+            border-top: 1px solid $dark-red ;
+            border-top-style:dashed;
+            font-size: $font-size-md;
+        }
+    }
+
+    @media(max-width: 768px){
+        &-heading{
+            font-size: $font-size-heading3;
+        }
+        &-question{
+            font-size: $font-size-md;
+        }
+        &-item.open{
+            .ui-faq-answer{
+                padding: 15px 10px;
+                font-size: $font-size-sm;
+            }
+        }
+    }  
+    @media(max-width: 576px){
+        padding: 50px 0;
+        &-heading{
+            font-size: $font-size-heading5;
+        }
+        &-question{
+            font-size: $font-size-sm;
+        }
+        &-item.open{
+            .ui-faq-answer{
+                padding: 10px 5px;
+                font-size: $font-size-xs;
+            }
+        }
+    }
+}

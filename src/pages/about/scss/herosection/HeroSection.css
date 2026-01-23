@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+body {
+  font-family: "Montserrat";
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.row {
+  --bs-gutter-x:0 ;
+}
+
+.ui-about-hero {
+  color: #000;
+  background-image: url("../../../../assets/images/aboutpage/banner.jpg");
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1492/550;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.ui-about-hero-content {
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.32) 1%, transparent 100%);
+  background-color: #880305;
+  color: white;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 0 0 0 10px;
+}
+.ui-about-hero-content .navigate-home {
+  color: lightgray;
+  display: flex;
+  align-items: center;
+  transition: 400ms;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.ui-about-hero-content .navigate-home:hover {
+  color: white;
+  font-weight: 700;
+  transform: translateX(10px);
+}
+.ui-about-hero-content h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+@media (max-width: 992px) {
+  .ui-about-hero-content {
+    width: 30%;
+  }
+  .ui-about-hero-content .navigate-home {
+    font-size: 12px;
+  }
+  .ui-about-hero-content .navigate-home:hover {
+    transform: translateX(8px);
+  }
+  .ui-about-hero-content h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .ui-about-hero-content {
+    width: 30%;
+  }
+  .ui-about-hero-content .navigate-home {
+    font-size: 10px;
+  }
+  .ui-about-hero-content .navigate-home:hover {
+    transform: translateX(5px);
+  }
+  .ui-about-hero-content h2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .ui-about-hero-content {
+    width: 30%;
+  }
+  .ui-about-hero-content .navigate-home {
+    font-size: 10px;
+  }
+  .ui-about-hero-content .navigate-home:hover {
+    transform: translateX(5px);
+  }
+  .ui-about-hero-content h2 {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=HeroSection.css.map */

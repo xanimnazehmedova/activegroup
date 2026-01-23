@@ -1,0 +1,65 @@
+@import '../../../../assets/styles/main.scss';
+@import '../../../../assets/styles/variables.scss';
+
+.ui-about{
+    overflow-x: hidden;
+    &-content{
+        &-image{
+            width: 70%;
+        }
+        &-text{
+            
+            h3{
+                font-size: $font-size-heading1;
+            }
+            p{
+                font-size: $font-size-md;
+            }
+        }
+    }
+    @media(max-width: 992px){
+        &-content{
+            &-image{
+                width: 200px;
+            }
+            &-text{
+                h3{
+                 font-size: $font-size-heading3;
+                }
+                p{
+                    font-size: $font-size-sm;
+                }
+            }
+        }
+    }
+    @media(max-width: 768px){
+        &-content{
+            &-image{
+                width:150px;
+            }
+            &-text{
+                h3{
+                 font-size: $font-size-heading4;
+                }
+                p{
+                 font-size: $font-size-sm;
+                }
+            }
+        }
+    }
+     @media(max-width: 576px){
+        &-content{
+            &-image{
+                width:100px;
+            }
+            &-text{
+                h3{
+                 font-size: $font-size-heading6;
+                }
+                p{
+                    font-size: $font-size-xxs;
+                }
+            }
+        }
+    }
+}

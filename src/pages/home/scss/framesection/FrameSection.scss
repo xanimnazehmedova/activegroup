@@ -1,0 +1,44 @@
+@import '../../../../assets/styles/main.scss';
+@import '../../../../assets/styles/variables.scss';
+
+
+
+
+.ui-frame{
+    background-color: $light-gray;
+    padding: 100px 0;
+    &-content{
+        h1{
+            color: $dark-red;
+            font-size: $font-size-heading1;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(223, 65, 65, 0.5);
+
+        }
+        h3{
+            color: $dark-gray;
+        }
+        &-media{
+            border-radius: 10px;
+            height: 400px;
+        }
+
+    }
+
+    @media (max-width: 768px){
+        padding: 50px 0;
+        &-content{
+        h1{
+            font-size: $font-size-heading4;
+        }
+        h3{
+            font-size: $font-size-heading6;
+        }
+        &-media{
+            height: 200px;
+        }
+
+    }
+
+    }
+}

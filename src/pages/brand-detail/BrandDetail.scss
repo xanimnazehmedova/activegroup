@@ -1,0 +1,240 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/main.scss';
+
+.ui-brand {
+  &-banner{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 40px;
+    &-content{
+      width: 300px;
+      height: 90%;
+      background-color: $background-color-white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  }
+  .logo-wrapper{
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        box-shadow: $box-shadow-sm;
+      transition: 300ms;
+      &:hover{
+        box-shadow: $box-shadow-lg;
+      }
+    
+  }
+    &-logo{
+      transition:400ms;
+      width: 100%;
+        filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.1));
+        &:hover {
+          transform: scale(1.08);
+          filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
+        }
+      }
+      &-name{
+        text-shadow: 2px 2px 5px rgb(254, 254, 254);
+      }
+  
+      &-site {
+      font-size: $font-size-md;
+      width: fit-content;
+      font-weight: 600;
+      color: #007bff;
+      text-decoration: none;
+      padding: 10px;
+      transition: all 0.4s ease;
+       &::after{
+        content: "";
+        display: block;
+        transition: 400ms;
+        width: 10%;
+        height: 5px;
+        background: linear-gradient(90deg, #007bff, #00c3ff);
+        border-radius: 2px;
+       }
+  
+      &:hover:after {
+        content: "";
+        display: block;
+        width: 100%;
+      }
+    }
+    .breadcrumb{
+      padding: 10px 25px;
+      background-color: $white;
+      width: fit-content;
+      border-radius: 10px;
+      transition: 300ms;
+      z-index: 1;
+      position: sticky;
+      top: 100px;
+      left: 0px;
+      font-size: $font-size-sm;
+      box-shadow: $box-shadow-sm;
+
+      &:hover{
+        box-shadow: $box-shadow-lg;
+      }
+     a{
+       text-decoration: underline;
+     }
+      a, span {
+        color: $gray;
+        font-weight: 600;
+
+      }
+      a:hover {
+        color: $red;
+      }
+       span {
+        color: $black;
+      }
+       
+    }
+    
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      p {
+        font-size:$font-size-lg;
+        color: $black;
+        border-bottom: 2px solid $gray;
+        padding: 20px 0;
+      }
+    
+      &-img {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 16px;
+        justify-content: center;
+        
+        img {
+          height: auto;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          max-width: 48%;
+          transition: transform 0.3s ease;
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+ 
+  
+    @media (max-width: 768px) {
+
+      &-banner {
+         height: auto;
+         padding: 20px;
+    
+         &-content {
+           width: 50%;
+           height: auto;
+           padding: 15px;
+           border-radius: 8px;
+         }
+       }
+    
+       .logo-wrapper {
+         width: 120px;
+         height: 120px;
+         padding: 10px;
+       }
+    
+       &-logo {
+         width: 100%;
+       }
+    
+       &-site {
+         font-size: $font-size-md;
+         padding: 8px;
+       }
+      &-content{
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        p{
+          font-size: $font-size-md;
+        }
+        > div {
+          flex: 1 1 100%;
+        }
+        &-img {
+          img {
+            max-width: 48%;
+          }
+        }
+      }
+    }
+    
+ @media(max-width: 578px){
+    &-banner {
+       padding: 10px;
+   
+       &-content {
+         padding: 10px;
+       }
+     }
+   
+     .logo-wrapper {
+       width: 100px;
+       height: 100px;
+     }
+   
+     &-site {
+       font-size: $font-size-sm;
+     }
+      &-content{
+        p{
+          font-size: $font-size-sm;
+        }
+      }
+      }
+}
+
+.ui-brand-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.ui-brand-content-img {
+  display: flex;
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+
+.ui-brand-content-img > div {
+  flex: 1;
+  display: contents; 
+}
+
+.ui-brand-content-img > div img {
+  width: 100%;
+  height: 200px; 
+  object-fit:contain; 
+  display: block;
+  border-radius: 8px; 
+}
+
+.ui-brand-content-img:last-of-type img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+

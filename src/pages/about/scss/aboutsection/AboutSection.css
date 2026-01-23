@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Sigmar&family=Yeseva+One&display=swap");
+body {
+  font-family: "Montserrat";
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.row {
+  --bs-gutter-x:0 ;
+}
+
+.ui-about {
+  overflow-x: hidden;
+}
+.ui-about-content-image {
+  width: 70%;
+}
+.ui-about-content-text h3 {
+  font-size: 40px;
+}
+.ui-about-content-text p {
+  font-size: 18px;
+}
+@media (max-width: 992px) {
+  .ui-about-content-image {
+    width: 200px;
+  }
+  .ui-about-content-text h3 {
+    font-size: 28px;
+  }
+  .ui-about-content-text p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .ui-about-content-image {
+    width: 150px;
+  }
+  .ui-about-content-text h3 {
+    font-size: 24px;
+  }
+  .ui-about-content-text p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .ui-about-content-image {
+    width: 100px;
+  }
+  .ui-about-content-text h3 {
+    font-size: 16px;
+  }
+  .ui-about-content-text p {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=AboutSection.css.map */
