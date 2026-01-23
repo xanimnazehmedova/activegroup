@@ -37,7 +37,7 @@ import img21_blog1_conference from "../assets/images/blog-detail/blog1-img21-con
 import img22_blog1_conference from "../assets/images/blog-detail/blog1-img22-conference.jpg";
 
 import banner_openning from "../assets/images/blog/blog-conference-day1.jpeg";
-import agc_2025_1 from "../assets/images/blog-detail/AGC-2025-1.MP4";
+import agc_2025_1 from "../assets/images/blog-detail/AGC-2025-1.mp4";
 import img1_agc_oppenning from "../assets/images/blog-detail/blog-openning-img1.jpeg";
 import img2_agc_oppenning from "../assets/images/blog-detail/blog-openning-img2.jpeg";
 import img3_agc_oppenning from "../assets/images/blog-detail/blog-openning-img3.jpeg";
