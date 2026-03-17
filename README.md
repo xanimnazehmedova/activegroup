@@ -1,12 +1,21 @@
-# React + Vite
+Active Group - Corporate Website
+This project is a modern, high-performance corporate website developed for Active Group, an official distributor of various international automotive spare part brands. The project was built using professional frontend development principles to ensure scalability and a premium user experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo: https://activegroup.az/
 
-Currently, two official plugins are available:
+🚀 Technologies Used
+The project leverages a modern tech stack focused on speed and maintainability:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React.js (Vite): Utilized for building a component-based architecture and ensuring a fast development workflow.
+JavaScript (ES6+): For handling dynamic functionality and data management.
+SCSS (Modules & Mixins): To create a clean, reusable style structure and ensure seamless responsive design.
+React Router DOM: Implemented for smooth, single-page application (SPA) navigation.
+Framer Motion / Swiper.js: Used to create engaging animations and interactive slider elements.
+Axios: For API integration and managing data flow throughout the application.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✨ Key Features & Solutions
+Dynamic Brand Catalog: Efficiently showcases the numerous international brands represented by the company.
+Responsive Design: A "Mobile First" approach was applied to ensure a perfect viewing experience across all devices (Mobile, Tablet, Desktop).
+Performance Optimization: Improved load times by using Vite’s optimized build process and implementing lazy loading for high-resolution images.
+Interactive UI Elements: Developed custom navigation menus, filtering systems, and contact forms to enhance User Experience (UX).
+SEO-Friendly Structure: Utilized semantic HTML tags and optimized meta structures for better search engine visibility.
