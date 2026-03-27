@@ -160,9 +160,6 @@ body {
   .ui-blogDetail .container {
     margin: 40px auto;
   }
-  .ui-blogDetail .container .post-content {
-    max-width: 100%;
-  }
   .ui-blogDetail .container .post-content-imgGrid {
     grid-template-columns: 1fr 1fr;
   }
@@ -175,6 +172,9 @@ body {
   }
   .ui-blogDetail .container .post-content-maintext {
     font-size: 18px;
+  }
+  .ui-blogDetail .container .post-content {
+    max-width: 100%;
   }
 }
 @media (max-width: 576px) {

@@ -142,7 +142,114 @@ import banner_valeo from "../assets/images/blog/blog-valeo.jpg";
 import img1_valeo from "../assets/images/blog/img1-valeo.jpg";
 import img2_valeo from "../assets/images/blog/img2-valeo.jpg";
 import img3_valeo from "../assets/images/blog/img3-valeo.jpg";
+
+
+import swag_gence_seminar from '../assets/images/blog/swag-gence-seminar.jpg'
+import img1_swag_gence from '../assets/images/blog-detail/img1_swag_gence.jpg'
+import img2_swag_gence from '../assets/images/blog-detail/img2_swag_gence.jpg'
+import img3_swag_gence from '../assets/images/blog-detail/img3_swag_gence.jpg'
+import img4_swag_gence from '../assets/images/blog-detail/img4_swag_gence.jpg'
+import img5_swag_gence from '../assets/images/blog-detail/img5_swag_gence.jpg'
+import img6_swag_gence from '../assets/images/blog-detail/img6_swag_gence.jpg'
+import img7_swag_gence from '../assets/images/blog-detail/img7_swag_gence.jpg'
+import img8_swag_gence from '../assets/images/blog-detail/img8_swag_gence.jpg'
+
+import brembo_seminar_banner from '../assets/images/blog/brembo_seminar_banner.jpg'
+import img1_brembo from '../assets/images/blog-detail/img1_brembo.jpg'
+import img2_brembo from '../assets/images/blog-detail/img2_brembo.jpg'
+import img3_brembo from '../assets/images/blog-detail/img3_brembo.jpg'
+import img4_brembo from '../assets/images/blog-detail/img4_brembo.jpg'
+import img5_brembo from '../assets/images/blog-detail/img5_brembo.jpg'
+
 const blog_detail = [
+  {
+  id: 17,
+  title: "Active Group Brembo seminarı",
+  slug: "active-group-brembo-seminar",
+  date: "13.09.2023",
+  heading1:
+    "13 sentyabr 2023-cü il tarixində Bakı şəhərində, JW Marriott Absheron Hotel-də Active Group tərəfindən Brembo markasına həsr olunmuş seminar təşkil olundu.",
+
+  heading2:
+    "Seminar çərçivəsində iştirakçılar əyləc sistemləri sahəsində yeniliklər və məhsullar haqqında məlumat əldə etdilər. 🤝",
+
+  text1: [
+    "Seminar və təqdimat",
+    "60 ildən artıq təcrübəyə və geniş bazar payına sahib Brembo markasının seminarında istehsal olunan məhsullar və onların tətbiq sahələri barədə ətraflı təqdimat keçirildi.",
+  ],
+
+  text2: [
+    "Texnologiya və yeniliklər ⚙️",
+    "Əyləc sistemləri sahəsində ən son texnoloji yeniliklər, məhsulların keyfiyyət göstəriciləri və performans üstünlükləri iştirakçıların diqqətinə çatdırıldı.",
+  ],
+
+  text3: [
+    "İnteraktiv müzakirə",
+    "Seminar zamanı iştirakçıları maraqlandıran suallar cavablandırıldı və mövzu ətrafında qarşılıqlı fikir mübadiləsi aparıldı.",
+  ],
+
+  text4: [
+    "Təşəkkür və yekun ✨",
+    "Tədbirdə iştirak edən hər kəsə təşəkkürümüzü bildirir, gələcək əməkdaşlıqlar üçün ümidvar olduğumuzu qeyd edirik.",
+  ],
+
+  tags: "#ActiveGroup #Brembo #Seminar",
+  banner: brembo_seminar_banner,
+  images_1: [
+    { url: img1_brembo, size: "large" },
+    { url: img2_brembo, size: "normal" },
+    { url: img3_brembo, size: "normal" }, 
+    { url: img4_brembo, size: "normal" },
+     { url: img5_brembo, size: "normal" },
+  ],
+},
+  {
+  id: 16,
+  title: "Active Group & SWAG – Gəncə seminarı",
+  slug: "active-group-swag-seminar",
+
+  date: "24.07.2023",
+  heading1:
+    "24 iyul tarixində Active Group-un təşkilatçılığı ilə Gəncə şəhərində SWAG brendinə həsr olunmuş seminar uğurla keçirildi.",
+
+  heading2:
+    "Seminar çərçivəsində iştirakçılar SWAG məhsulları və tətbiq sahələri ilə yaxından tanış oldular. 🤝",
+
+  text1: [
+    "Seminar və iştirakçılar",
+    "Tədbirdə Gəncə və ətraf regionlarda fəaliyyət göstərən tərəfdaşlar, mütəxəssislər və əməkdaşlar iştirak edərək SWAG brendi haqqında ətraflı məlumat əldə etdilər.",
+  ],
+
+  text2: [
+    "Məhsullar və təqdimat ⚙️",
+    "SWAG komandası tərəfindən təqdim olunan çıxışlarda məhsulların keyfiyyəti, tətbiq sahələri və texniki üstünlükləri haqqında geniş məlumat verildi, iştirakçıların sualları ətraflı şəkildə cavablandırıldı.",
+  ],
+
+  text3: [
+    "Sertifikatlaşdırma və yekun",
+    "Seminarın sonunda iştirakçılar aktiv iştiraklarına görə sertifikatlarla təltif olundu və tədbir qarşılıqlı fikir mübadiləsi ilə yekunlaşdı.",
+  ],
+
+  text4: [
+    "Təşəkkür və əməkdaşlıq ✨",
+    "Həmçinin Gəncə şəhərində və Bakı şəhəri Günəşli qəsəbəsində yerləşən yeni anbarların açılışında iştirak edən Serdar bəyə və SWAG komandasına təşəkkürümüzü bildirir, ölkəmizə səfərlərinə görə minnətdarlığımızı ifadə edirik.",
+  ],
+
+  tags: "#ActiveGroup #SWAG #Gence #Seminar",
+  banner: swag_gence_seminar,
+  images_1: [
+    { url: img1_swag_gence, size: "normal" },
+    { url: img2_swag_gence, size: "normal" },
+    { url: img3_swag_gence, size: "normal" },
+    { url: img4_swag_gence, size: "normal" },
+  ],
+  images_2: [
+    { url: img5_swag_gence, size: "normal" },
+    { url: img6_swag_gence, size: "normal" },
+    { url: img7_swag_gence, size: "normal" },
+    { url: img8_swag_gence, size: "normal" },
+  ],
+},
   {
   id: 15,
   title: "TotalEnergies nümayəndə heyətinin Active Group-a səfəri",

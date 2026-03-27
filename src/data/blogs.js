@@ -14,6 +14,8 @@ import eurolub_banner from "../assets/images/blog/blog-eurolub.jpg";
 import valeo_banner from "../assets/images/blog/blog-valeo.jpg";
 import agc3_interviews_bnner from '../assets/images/blog/banner-agc3-interview.png'
 import totalenergies_office_banner from '../assets/images/blog/banner-totalbaku.jpg'
+import swag_gence_banner from '../assets/images/blog/swag-gence-seminar.jpg'
+import brembo_seminar_banner from '../assets/images/blog/brembo_seminar_banner.jpg'
 const blogs = [
 {
   title: "TotalEnergies nümayəndə heyətinin Active Group-a səfəri",
@@ -66,6 +68,12 @@ const blogs = [
     img: total_banner,
   },
   {
+  title: "Active Group & SWAG – Gəncə seminarı",
+  slug: "active-group-swag-seminar",
+  preTitle: "24 iyul 2024-cü il - Gəncə",
+  img: swag_gence_banner,
+},
+  {
     title: "İtaliya Zavod Səyahəti",
     slug: "active-group-italy-trip",
     preTitle: "3–8 İyun 2024-cü il unudulmaz səyahət! ",
@@ -83,6 +91,12 @@ const blogs = [
     preTitle: "23-26 Aprel 2024-cü il - Türkiyə",
     img: teknorot_banner,
   },
+  {
+  title: "Active Group Brembo seminarı",
+  slug: "active-group-brembo-seminar",
+  preTitle: "13 sentyabr 2023-cü il – JW Marriott Absheron",
+  img: brembo_seminar_banner,
+},
   {
     title: "Active Group İzmir Səyahəti",
     slug: "active-group-izmir-trip",
