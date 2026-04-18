@@ -12,134 +12,141 @@ body {
   --bs-gutter-x:0 ;
 }
 
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .ui-blog {
   padding: 100px 0;
 }
 .ui-blog-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  gap: 28px;
 }
 .ui-blog-content h1 {
-  text-shadow: 1px 4px 4px rgba(223, 65, 65, 0.5);
   color: #6f0303;
   font-size: 40px;
-  margin-bottom: 15px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 .ui-blog-content h3 {
   color: #808080;
-  font-weight: 600;
-  text-align: left;
   font-size: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  font-weight: 500;
 }
 .ui-blog-content .card {
   position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  cursor: pointer;
+}
+.ui-blog-content .card .card-img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .ui-blog-content .card::after {
-  content: " ";
-  height: 0;
-  background: white;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  transition: all 0.3s ease;
+  content: "";
   position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.521) 100%, transparent 100%);
+  opacity: 0.7;
+  transition: 0.4s;
   z-index: 1;
 }
+.ui-blog-content .card:hover .card-img img {
+  transform: scale(1.08);
+}
 .ui-blog-content .card:hover::after {
-  height: 100%;
-  background-color: rgba(90, 25, 26, 0.7254901961);
+  opacity: 1;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.71) 50%, rgba(74, 16, 17, 0.849) 100%, transparent);
 }
-.ui-blog-content .card:hover .card-content {
-  height: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  bottom: 0;
-  align-items: self-start;
-}
-.ui-blog-content .card:hover h3 {
-  animation: fadeInUp 0.8s ease-out forwards;
-  color: #000;
-  width: 100%;
-}
-.ui-blog-content .card:hover p {
-  display: block;
-  animation: fadeInUp 0.8s ease-out forwards;
-}
-.ui-blog-content .card:hover a {
-  animation: fadeInUp 0.8s ease-out forwards;
-  display: block;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.253);
-}
-.ui-blog-content .card:hover a:hover {
-  background-color: rgba(255, 255, 255, 0.824);
-  color: #880305;
-  font-weight: 500;
-}
-.ui-blog-content .card-img {
-  position: relative;
-  background-color: black;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.ui-blog-content .card-img img {
-  width: 100%;
-  height: 100%;
+.ui-blog-content .card:hover .card-content .card-hidden {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  margin-top: 10px;
 }
 .ui-blog-content .card-content {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  bottom: 10px;
+  bottom: 0;
+  padding: 20px;
   z-index: 2;
-  padding: 10px;
+  color: #fff;
   width: 100%;
+  opacity: 1;
+  transition: 0.4s ease;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 .ui-blog-content .card-content h3 {
-  font-size: 16px;
-  margin: 0;
-  color: #000;
-  transition: 400ms;
-  background-color: white;
-  padding: 8px;
-  border-radius: 8px;
+  border-left: 5px solid #880305;
+  padding-left: 5px;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 0;
+  font-weight: 600;
+  transition: margin 0.4s ease;
+}
+.ui-blog-content .card-content .card-hidden {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 0.4s ease, opacity 0.3s ease, margin 0.4s ease;
+}
+.ui-blog-content .card-content .card-hidden div {
+  overflow: hidden;
 }
 .ui-blog-content .card-content p {
-  display: none;
-  color: white;
-  transition: 400ms;
-  margin: 0;
-  font-weight: 500;
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 10px;
 }
 .ui-blog-content .card-content a {
-  color: white;
-  border: 1px solid;
-  border-radius: 8px;
   font-size: 14px;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 5px 15px;
-  display: none;
-  transition: 400ms;
-  font-weight: 500;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  align-items: center;
+}
+.ui-blog-content .card-content a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: all 1s;
+}
+.ui-blog-content .card-content a:hover {
+  border: 1px solid #880305;
+  background: #6f0303;
+  color: #ffffff;
+}
+.ui-blog-content .card-content a:hover::before {
+  left: 150%;
+}
+@media (max-width: 1200px) {
+  .ui-blog .card-content {
+    padding: 15px 10px;
+    transform: translateY(13px);
+  }
+  .ui-blog .card-content h3 {
+    font-size: 16px;
+  }
+  .ui-blog .card-content p {
+    font-size: 14px;
+  }
 }
 @media (max-width: 992px) {
-  .ui-blog {
-    padding: 70px 0;
-  }
   .ui-blog-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -149,38 +156,33 @@ body {
   .ui-blog-content h3 {
     font-size: 20px;
   }
-  .ui-blog-content .card-content h3 {
-    font-size: 16px;
-  }
 }
 @media (max-width: 768px) {
-  .ui-blog {
-    padding: 70px 0;
-  }
   .ui-blog-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
-  .ui-blog-content h1 {
-    font-size: 28px;
+  .ui-blog .card .card-content {
+    transform: translateY(0);
+    opacity: 1;
   }
-  .ui-blog-content h3 {
-    font-size: 20px;
+  .ui-blog .card:hover .card-img img {
+    transform: scale(1);
   }
-  .ui-blog-content .card-content h3 {
-    font-size: 20px;
+  .ui-blog .card:hover::after {
+    opacity: 0.9;
+  }
+  .ui-blog .card::after {
+    opacity: 0.9;
   }
 }
 @media (max-width: 576px) {
   .ui-blog {
-    padding: 40px 0;
+    padding: 50px 0;
   }
   .ui-blog-content h1 {
     font-size: 20px;
   }
   .ui-blog-content h3 {
-    font-size: 16px;
-  }
-  .ui-blog-content .card-content h3 {
     font-size: 16px;
   }
 }/*# sourceMappingURL=Blog.css.map */

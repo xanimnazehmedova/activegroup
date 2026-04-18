@@ -1,5 +1,5 @@
 import { text } from "@fortawesome/fontawesome-svg-core";
-import totalenergies_dst_banner from '../assets/images/blog/total-dst-banner.jpg'
+import  totalenergies_dst_banner from '../assets/images/blog/total-dst-banner.jpg'
 import conference_banner from "../assets/images/blog/blog-conference.JPG";
 import conference_day1_banner from '../assets/images/blog/blog-conference-day1.jpeg'
 import reen_banner from "../assets/images/blog/blog-reen.jpg";
@@ -16,7 +16,14 @@ import agc3_interviews_bnner from '../assets/images/blog/banner-agc3-interview.p
 import totalenergies_office_banner from '../assets/images/blog/banner-totalbaku.jpg'
 import swag_gence_banner from '../assets/images/blog/swag-gence-seminar.jpg'
 import brembo_seminar_banner from '../assets/images/blog/brembo_seminar_banner.jpg'
+import swag_quba_seminar_banner from '../assets/images/blog/swag-quba-banner.jpg'
 const blogs = [
+  {
+    title: "Active Group SWAG seminarı - Quba",
+  slug: "swag-quba-seminar-2026",
+  preTitle: "7 Aprel 2026-cı il – Quba",
+  img: swag_quba_seminar_banner,
+},
 {
   title: "TotalEnergies nümayəndə heyətinin Active Group-a səfəri",
   slug: "totalenergies-ag-office",

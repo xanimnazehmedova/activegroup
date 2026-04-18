@@ -1,96 +1,135 @@
-@import '../../../../assets/styles/variables.scss';
+
+@import '../../../../assets/styles/variables.scss'; 
 @import '../../../../assets/styles/main.scss';
 
 .ui-banner {
   width: 100%;
+
   .swiper-button-next::after,
   .swiper-button-prev::after {
-  font-size: 30px;   
-  font-weight: 700;
-  color: #fff;
-  transition: 400ms;
-  border-radius: 8px;
-  background-color: $background-color-red-2;
-  padding: 10px 8px;
-}
+    font-size: 28px;   
+    font-weight: 700;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+  }
 
-.swiper-button-next:hover::after,
-.swiper-button-prev:hover::after {
-  color: $red;
-  background-color: $background-color-light;
-}
+  .swiper-button-next:hover::after,
+  .swiper-button-prev:hover::after {
+    background-color: $red;
+  }
 
   &-slide {
     width: 100%;
-    height:auto;
     aspect-ratio: 1492 / 550;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    position: relative;
+
+    
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        90deg,
+     rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.6) 35%,
+        rgba(208, 16, 19, 0.317) 70%,
+        rgba(118, 4, 6, 0.9) 100%
+      );
+    } 
   }
-  
+
+  &-overlay {
+    position: relative;
+    max-width: 600px;
+    color: #fff;
+
+ 
+    h2 {
+      font-size: $font-size-heading1;
+      margin-bottom: 12px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: $font-size-lg;
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: $dark-red;
+      margin-top: 10px;
+      border-radius: 2px;
+    }
+  }
+
+  //  responsive
+  @media (max-width: 992px) {
+    &-slide {
+      padding: 30px;
+    }
+
     &-overlay {
-      margin: 20px;
-      text-align: center;
-      width: fit-content;
-      height: auto;
-      color: #fff;
-      background-color: $background-color-red-2;
-      border-radius: 8px;
-
       h2 {
-        font-size: $font-size-heading1;
-        margin: 0;
+        font-size: $font-size-heading3;
       }
-
       p {
-        font-size: $font-size-lg;
-        margin: 0;
+        font-size: $font-size-sm;
       }
     }
-    @media (max-width: 992px){
-        &-overlay{
-            h2{
-                font-size: $font-size-heading3;
-            }
-            p{
-                font-size: $font-size-sm;
-            }
-        }
-       .swiper-button-next::after,
-       .swiper-button-prev::after {
-          font-size: 25px;     
-        }
-  
+         .swiper-button-next::after,
+         .swiper-button-prev::after {
+            font-size: 25px;     
+          }
+  }
+
+  @media (max-width: 768px) {
+    &-overlay {
+      h2 {
+        font-size: $font-size-heading5;
+      }
+      p {
+        font-size: $font-size-xs;
+      }
     }
-    @media(max-width: 768px){
-        h2{
-         font-size: $font-size-heading5;
-        }
-        p{
-            font-size: $font-size-xs;
-        }
       .swiper-button-next::after,
       .swiper-button-prev::after {
           font-size: 20px;     
         }
+  }
+
+  @media (max-width: 576px) {
+    &-slide {
+      padding: 20px;
     }
-      @media(max-width: 576px){
-        h2{
-         font-size: $font-size-heading6;
-        }
-        p{
-            font-size: $font-size-xxs;
-        }
-         .swiper-button-next::after,
+
+    &-overlay {
+      h2 {
+        font-size: $font-size-heading6;
+      }
+      p {
+        font-size: $font-size-xxs;
+      }
+    }
+       .swiper-button-next::after,
          .swiper-button-prev::after {
-          font-size: 10px; 
-          padding: 8px 5px;    
-        }
-    }
-
+           font-size: 10px; 
+           padding: 8px 5px;    
+         }
+  }
 }
-

@@ -161,7 +161,89 @@ import img3_brembo from '../assets/images/blog-detail/img3_brembo.jpg'
 import img4_brembo from '../assets/images/blog-detail/img4_brembo.jpg'
 import img5_brembo from '../assets/images/blog-detail/img5_brembo.jpg'
 
+
+import swag_quba_seminar_banner from '../assets/images/blog/swag-quba-banner.jpg'
+import img1_swag_quba from '../assets/images/blog-detail/img1-swag-quba.jpg'
+import img2_swag_quba from '../assets/images/blog-detail/img2-swag-quba.jpg'
+import img3_swag_quba from '../assets/images/blog-detail/img3-swag-quba.jpg'
+import img4_swag_quba from '../assets/images/blog-detail/img4-swag-quba.jpg'
+import img5_swag_quba from '../assets/images/blog-detail/img5-swag-quba.jpg'
+import img6_swag_quba from '../assets/images/blog-detail/img6-swag-quba.jpg'
+import img7_swag_quba from '../assets/images/blog-detail/img7-swag-quba.jpg'
+import img8_swag_quba from '../assets/images/blog-detail/img8-swag-quba.jpg'
+import img9_swag_quba from '../assets/images/blog-detail/img9-swag-quba.jpg'
+import img10_swag_quba from '../assets/images/blog-detail/img10-swag-quba.jpg'
+import img11_swag_quba from '../assets/images/blog-detail/img11-swag-quba.jpg'
+import img12_swag_quba from '../assets/images/blog-detail/img12-swag-quba.jpg'
+import img13_swag_quba from '../assets/images/blog-detail/img13-swag-quba.jpg'
+import img14_swag_quba from '../assets/images/blog-detail/img14-swag-quba.jpg'
+import img15_swag_quba from '../assets/images/blog-detail/img15-swag-quba.jpg'
+import img16_swag_quba from '../assets/images/blog-detail/img16-swag-quba.jpg'
+import img17_swag_quba from '../assets/images/blog-detail/img17-swag-quba.jpg'
+import img18_swag_quba from '../assets/images/blog-detail/img18-swag-quba.jpg'
+import img19_swag_quba from '../assets/images/blog-detail/img19-swag-quba.jpg'
+import img20_swag_quba from '../assets/images/blog-detail/img20-swag-quba.jpg'
+
 const blog_detail = [
+  {
+  id: 18,
+  title: "Active Group SWAG seminarı - Quba",
+    slug: "swag-quba-seminar-2026",
+
+  date: "07.04.2026",
+  heading1:
+    "7 aprel 2026-cı il tarixində Quba şəhərində Active Group tərəfindən SWAG brendinə həsr olunmuş seminar təşkil olundu.",
+
+  heading2:
+    "Seminarda Quba və ətraf bölgələrdə fəaliyyət göstərən tərəfdaş və müştərilər SWAG brendi haqqında əhəmiyyətli məlumatlar əldə etdilər. 🤝",
+
+  text1: [
+    "Seminarın gedişi",
+    "Təlim yüksək effektivliyi ilə yadda qaldı, iştirakçıların ünvanladıqları suallar ətraflı şəkildə cavablandırıldı və faydalı müzakirələr aparıldı.",
+  ],
+
+  text2: [
+    "Coffee break və imza mərasimi ☕",
+    "Təlim zamanı təşkil olunan coffee break fasiləsində cənab Serdar Aslanın müəllifi olduğu kitabın imza mərasimi baş tutdu və iştirakçılar tərəfindən böyük maraqla qarşılandı.",
+  ],
+
+  text3: [
+    "Sertifikat təqdimatı",
+    "Təlimin sonunda auditoriya seminarda iştiraklarına görə sertifikatlarla təltif olundu.",
+  ],
+
+  text4: [
+    "Yekun ✨",
+    "Tədbirin təşkilində əməyi olan hər kəsə təşəkkür edir, gələcək tədbirlərdə yenidən görüşməyi arzulayırıq.",
+  ],
+
+  tags: "#ActiveGroup #SWAG #Seminar #Quba",
+  banner: swag_quba_seminar_banner,
+  images_1: [
+    { url: img1_swag_quba, size: "large" },
+    { url: img3_swag_quba, size: "normal" },
+    { url: img4_swag_quba, size: "small" },
+    { url: img5_swag_quba, size: "normal" },
+    { url: img6_swag_quba, size: "normal" },
+    { url: img8_swag_quba, size: "normal" },
+    { url: img7_swag_quba, size: "normal" },
+    { url: img9_swag_quba, size: "large" },
+    { url: img2_swag_quba, size: "normal" },
+    { url: img10_swag_quba, size: "normal" },
+  ], 
+   images_2: [
+    { url: img11_swag_quba, size: "large" },
+    { url: img13_swag_quba, size: "small" },
+    { url: img15_swag_quba, size: "normal" },
+    { url: img14_swag_quba, size: "normal" },
+    { url: img16_swag_quba, size: "normal" },
+    { url: img17_swag_quba, size: "normal" },
+    { url: img18_swag_quba, size: "normal" },
+    { url: img19_swag_quba, size: "large" },
+    { url: img12_swag_quba, size: "normal" },
+    { url: img20_swag_quba, size: "normal" },
+  ],
+},
   {
   id: 17,
   title: "Active Group Brembo seminarı",

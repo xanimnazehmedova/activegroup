@@ -1,21 +1,46 @@
-Active Group - Corporate Website
-This project is a modern, high-performance corporate website developed for Active Group, an official distributor of various international automotive spare part brands. The project was built using professional frontend development principles to ensure scalability and a premium user experience.
+Active Group Corporate Website
 
-Live Demo: https://activegroup.az/
+A modern, high‑performance corporate website developed for Active Group, an official distributor of international automotive spare part brands.
+Built with a scalable front‑end architecture to deliver a premium user experience.
 
-🚀 Technologies Used
-The project leverages a modern tech stack focused on speed and maintainability:
+🔗 Live Demo: activegroup.az
 
-React.js (Vite): Utilized for building a component-based architecture and ensuring a fast development workflow.
-JavaScript (ES6+): For handling dynamic functionality and data management.
-SCSS (Modules & Mixins): To create a clean, reusable style structure and ensure seamless responsive design.
-React Router DOM: Implemented for smooth, single-page application (SPA) navigation.
-Framer Motion / Swiper.js: Used to create engaging animations and interactive slider elements.
-Axios: For API integration and managing data flow throughout the application.
+🚀 Tech Stack
+React.js (Vite) – Component‑based architecture, fast dev workflow
 
-✨ Key Features & Solutions
-Dynamic Brand Catalog: Efficiently showcases the numerous international brands represented by the company.
-Responsive Design: A "Mobile First" approach was applied to ensure a perfect viewing experience across all devices (Mobile, Tablet, Desktop).
-Performance Optimization: Improved load times by using Vite’s optimized build process and implementing lazy loading for high-resolution images.
-Interactive UI Elements: Developed custom navigation menus, filtering systems, and contact forms to enhance User Experience (UX).
-SEO-Friendly Structure: Utilized semantic HTML tags and optimized meta structures for better search engine visibility.
+JavaScript (ES6+) – Dynamic functionality and data management
+
+SCSS (Modules & Mixins) – Clean, reusable style structure, responsive design
+
+React Router DOM – Smooth SPA navigation
+
+Framer Motion / Swiper.js – Engaging animations & interactive sliders
+
+Axios – API integration and data flow management
+
+
+✨ Features
+Dynamic Brand Catalog – Showcases multiple international brands efficiently
+
+Responsive Design – Mobile‑first approach for all devices
+
+Performance Optimization – Vite build, lazy loading for images
+
+Interactive UI Elements – Custom menus, filtering, contact forms
+
+SEO‑Friendly Structure – Semantic HTML, optimized meta tags
+
+📂 Project Structure
+
+activegroup/
+├── public/              # Static assets
+├── src/                 # Core source code
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # Page-level views
+│   ├── styles/          # SCSS modules & mixins
+│   ├── utils/           # Helper functions
+│   └── App.jsx          # Root component
+├── index.html           # Entry HTML
+├── package.json         # Dependencies & scripts
+├── vite.config.js       # Vite configuration
+└── eslint.config.js     # Linting rules
